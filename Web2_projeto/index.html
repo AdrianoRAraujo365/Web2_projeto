@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Página do Batman - Cadastro</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Personalized CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Scripts JS -->
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img class="img-logo" src="./img/logo.png" alt="Logo Batman" />
+    </div>
+
+    <div class="container">
+        <!-- Galeria de Imagens -->
+        <div class="row">
+            <div class="col-md-3 col-6"><img class="img-batman" src="./img/b1.jpg" /></div>
+            <div class="col-md-3 col-6"><img class="img-batman" src="./img/b2.jpeg" /></div>
+            <div class="col-md-3 col-6"><img class="img-batman" src="./img/b3.jpg" /></div>
+            <div class="col-md-3 col-6"><img class="img-batman" src="./img/b4.webp" /></div>
+        </div>
+
+        <!-- Formulário de Cadastro -->
+        <div class="card bg-dark text-white mt-4">
+            <div class="card-body">
+                <h5 class="card-title text-warning">Bat-Cadastro de Mensagens</h5>
+                <p id="valido">Preencha o formulário e clique em Enviar</p>
+                
+                <form name="meuForm" onsubmit="return false;">
+                    <div class="form-group">
+                        <label>Nome:</label>
+                        <input type="text" id="nome" name="nome" class="form-control" placeholder="Seu nome completo">
+                    </div>
+
+                    <div class="form-group">
+                        <label>E-mail:</label>
+                        <input type="text" id="email" name="email" class="form-control" placeholder="exemplo@batman.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mensagem:</label>
+                        <textarea id="message" name="mensagem" class="form-control" rows="3" placeholder="Digite sua bat-mensagem"></textarea>
+                    </div>
+
+                    <button onclick="validarForm()" class="btn btn-block">Enviar para Bat-caverna</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
